@@ -1,0 +1,489 @@
+blockquote,
+body,
+button,
+dd,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+td,
+textarea,
+th,
+ul {
+    margin: 0;
+    padding: 0
+}
+
+address,
+cite,
+dfn,
+em,
+var {
+    font-style: normal
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: courier new, courier, monospace
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+a {
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: underline
+}
+
+sup {
+    vertical-align: text-top
+}
+
+sub {
+    vertical-align: text-bottom
+}
+
+legend {
+    color: #000
+}
+
+fieldset,
+img {
+    border: 0
+}
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+html {
+    width: 100%;
+    height: 300%;
+    position: relative;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+/*  */
+
+@-webkit-keyframes reverseRotataZ {
+    0% {
+        -webkit-transform: rotateZ(0deg);
+    }
+    100% {
+        -webkit-transform: rotateZ(-360deg);
+    }
+}
+
+@-webkit-keyframes rotataZ {
+    0% {
+        -webkit-transform: rotateZ(0deg);
+    }
+    100% {
+        -webkit-transform: rotateZ(360deg);
+    }
+}
+
+#musicControl {
+    position: fixed;
+    right: .625rem;
+    top: 1.25rem;
+    margin-top: 0;
+    display: inline-block;
+    z-index: 99999999
+}
+
+#musicControl a {
+    display: inline-block;
+    width: 3.125rem;
+    height: 3.125rem;
+    overflow: hidden;
+    background: url('../img/_guangdie@2x.png') no-repeat;
+    background-size: 100%;
+}
+
+#musicControl a audio {
+    width: 100%;
+    height: 3.125rem;
+}
+
+#musicControl a.stop {
+    background-position: left bottom;
+}
+
+#musicControl a.on {
+    background-position: 0px 1px;
+    -webkit-animation: reverseRotataZ 1.2s linear infinite;
+}
+
+#music_play_filter {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999998;
+}
+
+.top {
+    width: 100%;
+    height: 33.3333333333%;
+    /* background: #000; */
+    position: relative;
+}
+
+.top>.bj {
+    width: 100%;
+    height: 40%;
+    background: url("../img/beijing@2x.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.top>.con {
+    padding-top: 0.1rem;
+    box-sizing: border-box;
+    width: 100%;
+    height: 60%;
+    position: relative;
+}
+
+.top>.con>ul {
+    width: 86%;
+    margin: 0 auto;
+}
+
+.top>.con>ul>li {
+    margin-bottom: .5625rem;
+}
+
+.top>.con>ul>li>.title {
+    margin-bottom: .3125rem;
+}
+
+.top>.con>ul>li>.title>img {
+    width: 1rem;
+    height: 1rem;
+}
+
+.top>.con>ul>li>.title>h2 {
+    display: inline-block;
+    font-size: 1rem;
+    font-family: MicrosoftYaHei;
+    font-weight: bold;
+    font-style: italic;
+    color: rgba(26, 26, 26, 1);
+}
+
+.top>.con>ul>li>p {
+    font-size: .8125rem;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 1);
+    /* margin-bottom: .625rem; */
+}
+
+.top>img {
+    width: 94%;
+    height: 1.4375rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.center {
+    width: 100%;
+    height: 33.333333333333%;
+    /* background: rgb(87, 87, 87); */
+    position: relative;
+    /* padding-top: 0.8rem; */
+    box-sizing: border-box!important;
+    border: 1px solid #fff;
+}
+
+.center>ul {
+    width: 86%;
+    margin: 0 auto;
+    margin-top: 0.8rem;
+}
+
+.center>ul>li {
+    /* margin-bottom: .3625rem; */
+}
+
+.center>ul>li>.title {
+    /* margin-bottom: .1125rem; */
+}
+
+.center>ul>li>.title>img {
+    width: 1rem;
+    height: 1rem;
+}
+
+.center>ul>li>.title>h2 {
+    display: inline-block;
+    font-size: 1rem;
+    font-family: MicrosoftYaHei;
+    font-weight: bold;
+    font-style: italic;
+    color: rgba(26, 26, 26, 1);
+}
+
+.center>ul>li h3 {
+    font-size: .8125rem;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 1);
+    /* margin-bottom: .3125rem; */
+}
+
+.center>ul>li .etc {
+    font-size: .8125rem;
+    /* margin-bottom: .3125rem; */
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(102, 102, 102, 1);
+}
+
+.center>ul>li>ul>li {
+    margin-left: 1.25rem;
+    list-style: disc;
+    font-size: .8125rem;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(102, 102, 102, 1);
+    /* margin-bottom: .25rem; */
+}
+
+.center>ul>li>p {
+    font-size: .8125rem;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 1);
+    /* margin-bottom: .375rem; */
+}
+
+.bottom {
+    width: 100%;
+    height: 33.3333333333333%;
+    /* background: rgb(201, 200, 200); */
+    /* position: relative; */
+    background: url("../img/beijing01@2x.png") no-repeat;
+    background-size: 100% 100%;
+    padding-top: 7.5rem;
+    box-sizing: border-box;
+    position: relative;
+}
+
+body>p {
+    display: inline-block;
+}
+
+form {
+    position: absolute;
+    width: 86%;
+    height: auto;
+    left: 50%;
+    bottom: 18.75rem;
+    margin-left: -43%;
+    z-index: 9999999999999999999;
+}
+
+form>.name {
+    margin-bottom: 1.125rem;
+    width: 100%;
+    height: 2.375rem;
+    line-height: 2.375rem;
+}
+
+form>.name>p {
+    text-align: right;
+    display: inline-block;
+    width: 22%;
+    font-size: 1rem;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+}
+
+form>.name>input {
+    height: 100%;
+    margin-left: .9375rem;
+    width: 65%;
+    background: rgba(255, 255, 255, 1);
+    opacity: 0.6;
+    border-radius: .3125rem;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 1)
+}
+
+form>.sex {
+    margin-bottom: 1.125rem;
+    width: 100%;
+    height: 2.375rem;
+    line-height: 2.375rem;
+}
+
+form>.sex>p {
+    text-align: right;
+    display: inline-block;
+    width: 22%;
+    font-size: 1rem;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+}
+
+form>.sex>select {
+    height: 100%;
+    margin-left: .9375rem;
+    width: 65%;
+    background: rgba(255, 255, 255, 1);
+    opacity: 0.6;
+    border-radius: .3125rem;
+    border: 1px solid rgba(255, 255, 255, 1)
+}
+
+form>.phone {
+    margin-bottom: 1.125rem;
+    width: 100%;
+    height: 2.375rem;
+    line-height: 2.375rem;
+}
+
+form>.phone>p {
+    text-align: right;
+    display: inline-block;
+    width: 22%;
+    font-size: 1rem;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+}
+
+form>.phone>input {
+    height: 100%;
+    margin-left: .9375rem;
+    width: 65%;
+    background: rgba(255, 255, 255, 1);
+    opacity: 0.6;
+    border-radius: .3125rem;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 1)
+}
+
+form>.shenfen {
+    margin-bottom: 1.125rem;
+    width: 100%;
+    height: 2.375rem;
+    line-height: 2.375rem;
+}
+
+form>.shenfen>p {
+    text-align: right;
+    display: inline-block;
+    width: 22%;
+    font-size: 1rem;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+}
+
+form>.shenfen>input {
+    height: 100%;
+    margin-left: .9375rem;
+    width: 65%;
+    background: rgba(255, 255, 255, 1);
+    opacity: 0.6;
+    border-radius: .3125rem;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 1)
+}
+
+button {
+    display: block;
+    width: 88%;
+    height: 3rem;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 1.5rem;
+    font-size: 1rem;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 1);
+    text-align: center;
+    line-height: 3rem;
+    border: .0625rem solid #fff;
+    /* letter-spacing: 1rem; */
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 3.125rem;
+}
+
+.xiala {
+    width: 3.125rem;
+    height: 2.75rem;
+    position: absolute;
+    left: 50%;
+    bottom: 66.66666666666666666666%;
+    margin-left: -1.5625rem;
+    background: url("../img/xiangxia\ @2x.png") no-repeat;
+    z-index: 999999;
+    background-size: 100% 100%;
+}
+
+.xiala1 {
+    height: 2.75rem;
+    width: 3.125rem;
+    position: absolute;
+    left: 50%;
+    bottom: 33.333333333333333333333%;
+    margin-left: -1.5625rem;
+    background: url("../img/xiangxia\ @2x.png") no-repeat;
+    z-index: 999999;
+    background-size: contain;
+}
+
+.shangla {
+    width: 3.125rem;
+    height: 2.75rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-left: -1.5625rem;
+    background: url("../img/xiangshang@2x.png") no-repeat;
+    background-size: contain;
+    z-index: 999999;
+}
